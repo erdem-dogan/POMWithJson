@@ -1,0 +1,12 @@
+[
+  {
+    "key": "searchBox",
+    "value": "twotabsearchtextbox",
+    "type": "id"
+  },
+  {
+    "key": "navLogo",
+    "value": "nav-logo-sprites",
+    "type": "id"
+  }
+]
