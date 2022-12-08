@@ -10,10 +10,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class BasePage extends BaseTest {
     protected static int DEFAULT_DYNAMIC_WAIT_AMOUNT = 60;
     JavascriptExecutor executor = driver;
-    WebDriverWait wait = new WebDriverWait(driver, DEFAULT_DYNAMIC_WAIT_AMOUNT);
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_DYNAMIC_WAIT_AMOUNT));
 
     public BasePage(WebDriver driver) {
         BaseTest.driver = (RemoteWebDriver) driver;
