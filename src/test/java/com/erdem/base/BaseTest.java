@@ -1,10 +1,9 @@
-package com.testinium.base;
+package com.erdem.base;
 
-import com.testinium.selector.Selector;
-import com.testinium.selector.SelectorFactory;
-import com.testinium.selector.WebSelector;
-import com.testinium.test.Tests;
-import com.testinium.utility.Browser;
+import com.erdem.selector.Selector;
+import com.erdem.selector.SelectorFactory;
+import com.erdem.test.Tests;
+import com.erdem.utility.Browser;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.chrome.ChromeDriver;

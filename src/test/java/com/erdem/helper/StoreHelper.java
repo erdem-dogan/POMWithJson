@@ -1,8 +1,8 @@
-package com.testinium.helper;
+package com.erdem.helper;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.testinium.model.ElementInfo;
+import com.erdem.model.ElementInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

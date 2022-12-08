@@ -1,6 +1,6 @@
-package com.testinium.page;
+package com.erdem.page;
 
-import com.testinium.base.BasePage;
+import com.erdem.base.BasePage;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class MainPage extends BasePage {

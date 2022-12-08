@@ -1,4 +1,4 @@
-package com.testinium.model;
+package com.erdem.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

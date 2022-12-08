@@ -1,8 +1,8 @@
-package com.testinium.selector;
+package com.erdem.selector;
 
-import com.testinium.helper.StoreHelper;
-import com.testinium.model.ElementInfo;
-import com.testinium.model.SelectorInfo;
+import com.erdem.helper.StoreHelper;
+import com.erdem.model.ElementInfo;
+import com.erdem.model.SelectorInfo;
 import org.openqa.selenium.By;
 
 public interface Selector {

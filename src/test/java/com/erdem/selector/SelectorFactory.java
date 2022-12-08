@@ -1,4 +1,4 @@
-package com.testinium.selector;
+package com.erdem.selector;
 
 public class SelectorFactory {
     private SelectorFactory() {

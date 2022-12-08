@@ -1,7 +1,7 @@
-package com.testinium.base;
+package com.erdem.base;
 
-import com.testinium.model.SelectorInfo;
-import com.testinium.page.MainPage;
+import com.erdem.model.SelectorInfo;
+import com.erdem.page.MainPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

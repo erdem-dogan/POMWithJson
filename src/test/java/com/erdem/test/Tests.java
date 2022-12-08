@@ -1,7 +1,7 @@
-package com.testinium.test;
+package com.erdem.test;
 
-import com.testinium.base.BaseTest;
-import com.testinium.page.LoginPage;
+import com.erdem.base.BaseTest;
+import com.erdem.page.LoginPage;
 import org.junit.Before;
 import org.junit.Test;
 

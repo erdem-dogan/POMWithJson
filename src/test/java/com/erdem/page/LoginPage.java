@@ -1,6 +1,6 @@
-package com.testinium.page;
+package com.erdem.page;
 
-import com.testinium.base.BasePage;
+import com.erdem.base.BasePage;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {

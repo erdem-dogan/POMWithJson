@@ -1,6 +1,6 @@
-package com.testinium.selector;
+package com.erdem.selector;
 
-import com.testinium.model.ElementInfo;
+import com.erdem.model.ElementInfo;
 import org.openqa.selenium.By;
 
 public class WebSelector implements Selector{
