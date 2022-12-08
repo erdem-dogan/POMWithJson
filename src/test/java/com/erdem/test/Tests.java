@@ -15,6 +15,6 @@ public class Tests extends BaseTest {
 
     @Test
     public void test() throws InterruptedException {
-        loginPage.login();
+        loginPage.login().callMainPage().justMain().callProductPage().justProduct();
     }
 }

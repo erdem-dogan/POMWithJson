@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,6 +29,9 @@ public class BaseTest {
             driver = new ChromeDriver(browser.chromeOptions());
         } else if ("edge".equalsIgnoreCase(browser.browserName)) {
             driver = new EdgeDriver(browser.edgeOptions());
+        } else if ("safari".equalsIgnoreCase(browser.browserName)) {
+            driver = new SafariDriver(browser.safariOptions());
+            driver.manage().window().maximize();
         }
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         selector = SelectorFactory.createElementHelper();

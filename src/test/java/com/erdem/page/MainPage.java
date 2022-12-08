@@ -7,4 +7,9 @@ public class MainPage extends BasePage {
     public MainPage(RemoteWebDriver driver) {
         super(driver);
     }
+
+    public MainPage justMain(){
+        logger.info("Çağırıldı1.");
+        return this;
+    }
 }

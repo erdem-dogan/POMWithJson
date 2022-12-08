@@ -2,6 +2,7 @@ package com.erdem.base;
 
 import com.erdem.model.SelectorInfo;
 import com.erdem.page.MainPage;
+import com.erdem.page.ProductPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -69,5 +70,9 @@ public class BasePage extends BaseTest {
 
     public MainPage callMainPage(){
         return new MainPage(driver);
+    }
+
+    public ProductPage callProductPage() {
+        return new ProductPage(driver);
     }
 }
