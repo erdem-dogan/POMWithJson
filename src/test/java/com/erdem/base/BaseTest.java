@@ -4,8 +4,8 @@ import com.erdem.selector.Selector;
 import com.erdem.selector.SelectorFactory;
 import com.erdem.test.Tests;
 import com.erdem.utility.Browser;
-import org.junit.After;
-import org.junit.Before;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -17,13 +17,13 @@ import java.time.Duration;
 
 public class BaseTest {
     protected static RemoteWebDriver driver;
-    protected Logger logger = LoggerFactory.getLogger(Tests.class);
+    protected static Logger logger = LoggerFactory.getLogger(Tests.class);
 
     protected static Selector selector;
-    Browser browser = new Browser();
+    static Browser browser = new Browser();
 
-    @Before
-    public void setUp() {
+    @BeforeAll
+    public static void setUp() {
         logger.info("********************TEST BAŞLIYOR********************");
         if ("chrome".equalsIgnoreCase(browser.browserName)) {
             driver = new ChromeDriver(browser.chromeOptions());
@@ -37,8 +37,8 @@ public class BaseTest {
         selector = SelectorFactory.createElementHelper();
     }
 
-    @After
-    public void tearDown() {
+    @AfterAll
+    public static void tearDown() {
         logger.info("********************TEST SONLANDI********************");
         driver.quit();
     }

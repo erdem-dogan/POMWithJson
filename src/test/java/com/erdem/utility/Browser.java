@@ -45,9 +45,6 @@ public class Browser {
 
     public SafariOptions safariOptions() {
         safariOptions = new SafariOptions();
-        capabilities = new DesiredCapabilities();
-        safariOptions.setCapability("browser", "safari");
-        safariOptions.merge(capabilities);
         return safariOptions;
     }
 }
